@@ -1,0 +1,32 @@
+# The exact versions the reviewed runs used (Python 3.10, CUDA 12.8 wheels).
+# Install torch first from the CUDA index:
+#   pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
+diffusers==0.39.0
+transformers @ git+https://github.com/huggingface/transformers.git@ce65b951764b0861eb1bfc75698a90de93e4ea75
+accelerate==1.13.0
+bitsandbytes==0.50.0
+peft==0.19.1
+safetensors==0.8.0
+huggingface_hub==1.13.0
+sentencepiece==0.2.1
+protobuf==7.34.1
+numpy==1.26.4
+pillow==12.1.1
+scipy==1.15.3
+scikit-image==0.25.2
+opencv-python-headless==4.11.0.86
+opencv-python==4.11.0.86          # albumentations 0.5.2 pulls it in; pinned to the same version
+# LaMa (third_party/lama) imports these at load time
+omegaconf==2.3.1
+hydra-core==1.3.4
+PyYAML==6.0.3
+kornia==0.8.2
+pytorch-lightning==2.2.1
+torchmetrics==1.9.0
+albumentations==0.5.2
+imgaug==0.4.0
+scikit-learn==1.7.2
+pandas==2.3.3
+easydict==1.13
+webdataset==0.2.86
+tqdm==4.67.3
